@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Produces("application/json")]
     [Route("api/Student")]
     public class StudentController : Controller
@@ -14,12 +17,21 @@ namespace ServiceLayer.Controllers
         ILogger _logger;
         UnitOfWork _unitOfWork;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="unitOfWork"></param>
+        /// <param name="logger"></param>
         public StudentController(UnitOfWork unitOfWork, ILogger<StudentController> logger)
         {
             _unitOfWork = unitOfWork;
             _logger = logger;
         }
 
+        /// <summary>
+        /// Returns the collection of students  
+        /// </summary>
+        /// <returns>Students collection</returns>
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -27,6 +39,19 @@ namespace ServiceLayer.Controllers
             return Ok(items);
         }
 
+        /// <summary>
+        /// Return student details based on the Id
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     Get /Student
+        ///     {
+        ///         "id" : 3
+        ///     }
+        /// </remarks>
+        /// <param name="id"></param>
+        /// <returns>Student</returns>
         [HttpGet("{id}", Name = "GetStudent")]
         public async Task<IActionResult> Get(int id)
         {
@@ -38,6 +63,11 @@ namespace ServiceLayer.Controllers
             return Ok(item);
         }
 
+        /// <summary>
+        /// Saves student
+        /// </summary>
+        /// <param name="student"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Student student)
         {
@@ -54,6 +84,12 @@ namespace ServiceLayer.Controllers
                 return BadRequest();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="student"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int? id, [FromBody] Student student)
         {
@@ -63,7 +99,7 @@ namespace ServiceLayer.Controllers
             }
             var studentToUpdate = await _unitOfWork.StudentRepository.GetByIdAsnyc(id.Value);
 
-            if(studentToUpdate.ID != id)
+            if (studentToUpdate.ID != id)
             {
                 return BadRequest();
             }
@@ -91,6 +127,11 @@ namespace ServiceLayer.Controllers
             return BadRequest();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
