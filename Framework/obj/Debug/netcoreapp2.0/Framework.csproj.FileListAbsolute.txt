@@ -1,0 +1,9 @@
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\bin\Debug\netcoreapp2.0\Framework.deps.json
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\bin\Debug\netcoreapp2.0\Framework.dll
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\obj\Debug\netcoreapp2.0\Framework.csproj.CoreCompileInputs.cache
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\obj\Debug\netcoreapp2.0\Framework.AssemblyInfoInputs.cache
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\obj\Debug\netcoreapp2.0\Framework.AssemblyInfo.cs
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\bin\Debug\netcoreapp2.0\Framework.pdb
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\obj\Debug\netcoreapp2.0\Framework.dll
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\obj\Debug\netcoreapp2.0\Framework.pdb
+C:\Users\DanishB\source\repos\SampleCoreWebApp\Framework\obj\Debug\netcoreapp2.0\Framework.csprojResolveAssemblyReference.cache

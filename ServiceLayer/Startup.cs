@@ -34,7 +34,7 @@ namespace ServiceLayer
             services.AddDbContext<DataBaseContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IStudentRepository, StudentRepository>();
+            services.AddSingleton<IStudentRepository, StudentRepository>();
             services.AddTransient<UnitOfWork>();
 
             services.AddMvc().AddJsonOptions(options =>
