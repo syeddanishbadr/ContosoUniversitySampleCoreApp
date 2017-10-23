@@ -1,0 +1,20 @@
+﻿<h1>Student</h1>
+
+<p *ngIf="!students"><em>loading...</em></p>
+
+<table class="table" *ngIf="students">
+    <thead>
+        <tr>
+            <th>Last name</th>
+            <th>First Name</th>
+            <th>Enrollment date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.lastName}}</td>
+            <td>{{student.firstMidName}}</td>
+            <td>{{student.enrollmentDate}}</td>
+        </tr>
+    </tbody>
+</table>

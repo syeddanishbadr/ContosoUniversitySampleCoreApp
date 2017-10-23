@@ -1,0 +1,14 @@
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\bin\Release\netcoreapp2.0\ServiceLayer.deps.json
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\bin\Release\netcoreapp2.0\ServiceLayer.runtimeconfig.json
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\bin\Release\netcoreapp2.0\ServiceLayer.runtimeconfig.dev.json
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\bin\Release\netcoreapp2.0\ServiceLayer.dll
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\bin\Release\netcoreapp2.0\ServiceLayer.pdb
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\bin\Release\netcoreapp2.0\Framework.dll
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\bin\Release\netcoreapp2.0\Framework.pdb
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\obj\Release\netcoreapp2.0\ServiceLayer.csprojResolveAssemblyReference.cache
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\obj\Release\netcoreapp2.0\ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\obj\Release\netcoreapp2.0\ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\obj\Release\netcoreapp2.0\ServiceLayer.AssemblyInfo.cs
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\obj\Release\netcoreapp2.0\ServiceLayer.dll
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\obj\Release\netcoreapp2.0\ServiceLayer.pdb
+C:\Users\DanishB\source\repos\SampleCoreWebApp\ServiceLayer\bin\Release\netcoreapp2.0\ServiceLayer.xml

@@ -5,11 +5,7 @@ using System.Threading.Tasks;
 
 namespace Framework.Core
 {
-    //public interface IUnitOfWork : IDisposable
-    //{
-    //    Task<bool> Save();
-    //}
-    public class UnitOfWork : IDisposable // IUnitOfWork
+    public class UnitOfWork : IDisposable
     {
         private DataBaseContext _context;
         private ILogger _logger;

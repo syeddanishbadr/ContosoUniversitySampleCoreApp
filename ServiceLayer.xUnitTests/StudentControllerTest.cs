@@ -2,9 +2,11 @@
 using Framework.Logic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Moq;
 using ServiceLayer.Controllers;
+using System.IO;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -26,6 +28,7 @@ namespace ServiceLayer.xUnitTests
             mocILoggerUnitOfWork = new Mock<ILogger<UnitOfWork>>();
             mocIStudentRespository = new Mock<IStudentRepository>();
             mocUnitOfWorkRepo = new Mock<UnitOfWork>(mocDbContext.Object, mocILoggerUnitOfWork.Object, mocIStudentRespository.Object);
+            //mocUnitOfWorkRepo = new Mock<IUnitOfWork>();
             mocILoggerStudentController = new Mock<ILogger<StudentController>>();
             studentController = new StudentController(mocUnitOfWorkRepo.Object, mocILoggerStudentController.Object);
         }

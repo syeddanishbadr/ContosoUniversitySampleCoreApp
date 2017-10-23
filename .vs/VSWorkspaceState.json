@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Framework\\Core",
+    "\\Framework\\Logic",
+    "\\UILayer",
+    "\\UILayer\\ClientApp",
+    "\\UILayer\\ClientApp\\test"
   ],
-  "SelectedNode": "\\Framework",
+  "SelectedNode": "\\UILayer\\ClientApp\\test\\boot-tests.ts",
   "PreviewInSolutionExplorer": false
 }

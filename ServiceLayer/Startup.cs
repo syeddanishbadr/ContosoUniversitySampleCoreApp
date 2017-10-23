@@ -34,7 +34,7 @@ namespace ServiceLayer
             services.AddDbContext<DataBaseContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddSingleton<IStudentRepository, StudentRepository>();
+            services.AddTransient<IStudentRepository, StudentRepository>();
             services.AddTransient<UnitOfWork>();
 
             services.AddMvc().AddJsonOptions(options =>
@@ -52,7 +52,11 @@ namespace ServiceLayer
                 );
             });
 
-           
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://localhost:50536"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +73,8 @@ namespace ServiceLayer
            {
                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
            });
+
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseMvc();
         }

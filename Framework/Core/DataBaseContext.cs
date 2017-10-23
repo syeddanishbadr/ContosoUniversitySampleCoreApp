@@ -5,10 +5,10 @@ namespace Framework.Core
 {
     public class DataBaseContext : DbContext
     {
-        //public DataBaseContext(DbContextOptions<DataBaseContext> options) 
-        //    : base(options)
-        //{
-        //}
+        public DataBaseContext(DbContextOptions<DataBaseContext> options)
+            : base(options)
+        {
+        }
 
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
